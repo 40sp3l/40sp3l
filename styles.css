@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background: #1a1a1a;
+  color: #00ff88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+header p {
+  color: #cccccc;
+}
+
+.upload-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-section input {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00ff88;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.upload-section button {
+  padding: 10px 20px;
+  background: #00ff88;
+  border: none;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upload-section button:hover {
+  background: #00cc66;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.domain-list, .details-panel {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.domain-list h2, .details-panel h2 {
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+#domainList {
+  list-style: none;
+}
+
+#domainList li {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#domainList li:hover {
+  background: rgba(0, 255, 136, 0.2);
+}
+
+#detailsContainer {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+#detailsContainer pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #cccccc;
+}
+
+#detailsContainer h3 {
+  color: #00ff88;
+  margin-top: 10px;
+}
+
+#detailsContainer p {
+  color: #cccccc;
+}
