@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>40sp3l</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>40sp3l</h1>
+      <p>Upload a .txt file with domains to start scanning</p>
+    </header>
+    
+    <div class="upload-section">
+      <input type="file" id="domainFile" accept=".txt">
+      <button onclick="uploadFile()">Upload & Scan</button>
+    </div>
+    
+    <div class="main-content">
+      <div class="domain-list">
+        <h2>Domains & Subdomains</h2>
+        <ul id="domainList"></ul>
+      </div>
+      
+      <div class="details-panel">
+        <h2>Domain Details</h2>
+        <div id="detailsContainer">
+          <p>Select a domain to view its details</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
